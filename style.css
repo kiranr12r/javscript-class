@@ -1,0 +1,130 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styling */
+#head {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 15px 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+#form {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 25px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Input Fields */
+input {
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 16px;
+    width: 90%;
+    max-width: 280px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect on inputs */
+input:focus {
+    background: white;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Button Styling */
+#regs {
+    cursor: pointer;
+    background: #2d3436;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+    width: 90%;
+    max-width: 280px;
+}
+
+/* Hover & Click Effects */
+#regs:hover {
+    background: #636e72;
+    transform: scale(1.05);
+}
+
+/* Click animation */
+#regs:active {
+    transform: scale(0.95);
+}
+
+/* Success & Error Messages */
+h2 {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+}
+
+.success {
+    background: #55efc4;
+    color: #2d3436;
+}
+
+.error {
+    background: #fab1a0;
+    color: #d63031;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
